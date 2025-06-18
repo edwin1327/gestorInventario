@@ -14,7 +14,7 @@
                         <ul>
                             <li><a href="#">Inicio</a></li>
                             <li><a href="Inventario.php">Inventario</a></li>
-                            <li><a href="#">Añadir producto</a></li>
+                            <li><a href="Añadir.php">Añadir producto</a></li>
                         </ul>
                     </nav>
 

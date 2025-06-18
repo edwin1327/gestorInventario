@@ -12,7 +12,7 @@
                 <ul>
                     <li><a href="index.php">Inicio</a></li>
                     <li><a href="Inventario.php">Inventario</a></li>
-                    <li><a href="#">Añadir Producto</a></li>
+                    <li><a href="#">Añadir producto</a></li>
                 </ul>
             </nav>
 
@@ -35,7 +35,7 @@
                             <td><?php echo $pro['Nombre']?></td>
                             <td><?php echo $pro['Descripcion']?></td>
                             <td><?php echo $pro['Precio']?></td>
-                            <td><a href="controller/C_Edit.php?id=<?php echo $pro['Id_productos'];?>">Editar Producto</a></td>
+                            <td><a href="../controller/C_Edit.php?id=<?php echo $pro['Id_productos'];?>">Editar Producto</a></td>
                             <td><a href="../controller/C_Delete.php?id=<?php echo $pro['Id_productos'];?>">Eliminar Producto</a></td>
                         </tr>
 
