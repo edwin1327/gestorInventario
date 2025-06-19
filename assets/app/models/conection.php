@@ -72,4 +72,9 @@ class Conection{
         $peticion = $this->conect->query("INSERT INTO productos (Nombre, Descripcion, Precio) VALUES ('$Nombre','$Descripcion','$Precio')");
     }
 
+    // Función para eliminar productos
+    public function DeleteProduct($id) {
+        $peticion = $this->conect->query("DELETE FROM productos WHERE id_productos = '$id'");
+    }
+
 }
