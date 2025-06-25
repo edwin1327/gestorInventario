@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Contenedores */
+.cont{
+    width: 100%;
+    height: 100%;
+}
+
+.subcont{
+    width: 100%;
+    height: 100%;
+}
+
+/* Menu */
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+li{
+    margin-left: 30px;
+    padding-top: 20px;
+    font-size: 18px;
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 45px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    padding-top: 10%;
+    animation-name: deslizar;
+    animation-duration: 1s;
+    transition: linear 1s;
+}
+
+/* Tabla de edición */
+.table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+    animation-name: deslizar;
+    animation-duration: 1s;
+    transition: linear 1s;
+}
+
+td{
+    border-right: 2px solid rgb(128, 128, 128, 0.2);
+    border-bottom: 2px solid rgb(128, 128, 128, 0.2);
+}
+
+.titulos{
+    border-right: none;
+    box-shadow: 2px 2px 2px black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+input{
+    width: 98%;
+    height: 97%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+textarea{
+    width: 98%;
+    height: 97%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.datosU{
+    border-right: none;
+    box-shadow: 2px 2px 2px black;
+}
+
+.datos{
+    height: 70px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.actualizar{
+    margin-left: 30px;
+    width: 70%;
+    height: 60px;
+}
+
+/* Animación */
+li:hover{
+    transform: scale(2,2);
+    transform: translateY(4px);
+    background-color: rgb(246, 136, 2);
+    border-radius: 10px;
+}
+
+h1:hover{
+    color: rgb(246, 136, 2);
+    text-shadow: 2px 2px 2px black;
+}
+
+@keyframes deslizar{
+    from{
+        margin-top: 100%;
+        height: 200%;
+    }
+
+    to{
+        margin-top: 5%;
+        height: 80%;
+    }
+}

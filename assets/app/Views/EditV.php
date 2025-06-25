@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/edit.css">
     <title>Editar producto</title>
 </head>
 <body>
@@ -16,13 +17,15 @@
                 </ul>
             </nav>
             <div class="table">
+                <h1>Edita tu producto</h1>
                 <table>
                     <thead>
                         <tr>
-                            <td>Id</td>
-                            <td>Nombre</td>
-                            <td>Descripción</td>
-                            <td>Precio</td>
+                            <td class="titulos">Id</td>
+                            <td class="titulos">Nombre</td>
+                            <td class="titulos">Descripción</td>
+                            <td class="titulos">Precio</td>
+                            <td class="titulos">Actualizar</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,11 +34,11 @@
                         ?>
                         <form action="../controller/C_Update.php" method="post">
                             <tr>
-                                <td><input type="hidden" value="<?php echo $pro['Id_productos']?>" name="Id"></td>
-                                <td><input type="text" value="<?php echo $pro['Nombre']?>" name="Nombre"></td>
-                                <td><textarea name="Descripcion" cols="20" rows="5"><?php echo $pro['Descripcion']?></textarea></td>
-                                <td><input type="text" value="<?php echo $pro['Precio']?>" name="Precio"></td>
-                                <td><button class="actualizar">Actualizar Producto</button></td>
+                                <td><input class="datos" type="hidden" value="<?php echo $pro['Id_productos']?>" name="Id"></td>
+                                <td><input class="datos" type="text" value="<?php echo $pro['Nombre']?>" name="Nombre"></td>
+                                <td><textarea class="datos" name="Descripcion" cols="20" rows="5"><?php echo $pro['Descripcion']?></textarea></td>
+                                <td><input class="datos" type="text" value="<?php echo $pro['Precio']?>" name="Precio"></td>
+                                <td class="datosU"><button class="actualizar">Actualizar Producto</button></td>
                             </tr>
                         </form>    
                         <?php
